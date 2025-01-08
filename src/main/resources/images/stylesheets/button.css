@@ -1,0 +1,18 @@
+.context-menu {
+    -fx-background-color: #f5faff; /* Light gray background */
+    -fx-background-radius: 15;
+
+}
+
+.menu-item {
+    -fx-font-family: "Berlin Sans FB";
+    -fx-text-fill: #1879e1;        /* Dark text color */
+    -fx-font-size: 16px;
+    -fx-background-radius: 15;/* Font size */
+              /* Top/Bottom, Left/Right padding */
+}
+
+.menu-item:hover {
+    -fx-background-color: #1879e1;
+    -fx-cursor: hand; /* Hover effect */
+}

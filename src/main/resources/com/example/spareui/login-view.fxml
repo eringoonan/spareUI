@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="352.0" prefWidth="367.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spareui.LoginController">
+   <children>
+         <VBox alignment="TOP_CENTER" prefHeight="337.0" prefWidth="349.0" style="-fx-background-color: f5faff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+               <VBox alignment="TOP_CENTER" spacing="5.0" style="-fx-background-color: white; -fx-background-radius: 10;" VBox.vgrow="ALWAYS">
+                  <children>
+                     <Label prefHeight="36.0" prefWidth="174.0" text="Welcome to SpareBB! ">
+                        <padding>
+                           <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                        </padding>
+                        <font>
+                           <Font name="Berlin Sans FB" size="17.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets top="5.0" />
+                        </VBox.margin>
+                     </Label>
+                     <Label text="Please Login Below:">
+                        <font>
+                           <Font name="Berlin Sans FB" size="12.0" />
+                        </font>
+                     </Label>
+                     <TextField fx:id="usernameBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="307.0" promptText=" Username">
+                        <padding>
+                           <Insets bottom="5.0" left="5.0" top="5.0" />
+                        </padding>
+                        <VBox.margin>
+                           <Insets left="5.0" right="5.0" top="5.0" />
+                        </VBox.margin>
+                     </TextField>
+                     <PasswordField fx:id="passwordBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="307.0" promptText="Password">
+                        <VBox.margin>
+                           <Insets top="5.0" />
+                        </VBox.margin>
+                  </PasswordField>
+                     <Label fx:id="loginResult" alignment="TOP_CENTER" textFill="RED" />
+                     <HBox alignment="TOP_CENTER" prefHeight="42.0" prefWidth="368.0" spacing="10.0">
+                        <children>
+                           <Button fx:id="exitButton" minHeight="32.0" minWidth="150.0" mnemonicParsing="false" onAction="#onExitClick" style="-fx-background-color: #dd7e7e;" text="Exit" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold" size="13.0" />
+                              </font>
+                              <cursor>
+                                 <Cursor fx:constant="HAND" />
+                              </cursor>
+                        </Button>
+                           <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onLoginClick" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: #7edd97;" text="Login" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold" size="13.0" />
+                              </font>
+                              <cursor>
+                                 <Cursor fx:constant="HAND" />
+                              </cursor>
+                        </Button>
+                        </children>
+                        <VBox.margin>
+                           <Insets />
+                        </VBox.margin>
+                        <padding>
+                           <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                        </padding>
+                     </HBox>
+                     <Label text="OR" />
+                     <Button fx:id="createAccountButton" mnemonicParsing="false" onAction="#onCreateAccount" prefHeight="32.0" prefWidth="307.0" style="-fx-background-color: #6a87f2;" text="Create Account" textFill="WHITE">
+                        <font>
+                           <Font name="System Bold" size="13.0" />
+                        </font>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                  </Button>
+                     <Label text="SpareBB Inc© 2024">
+                        <font>
+                           <Font name="Berlin Sans FB" size="11.0" />
+                        </font>
+                        <padding>
+                           <Insets top="15.0" />
+                        </padding>
+                     </Label>
+                  </children>
+                  <VBox.margin>
+                     <Insets />
+                  </VBox.margin>
+                  <padding>
+                     <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                  </padding>
+               </VBox>
+            </children>
+            <padding>
+               <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            </padding>
+         </VBox>
+   </children>
+</AnchorPane>
